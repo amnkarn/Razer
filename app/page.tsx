@@ -9,13 +9,13 @@ import Hero3 from "./components/Hero3";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen bg-white font-razer">
+    <div className="w-full h-screen font-razer">
       <header>
         <Navbar />
         <Notification />
       </header>
 
-      <main>
+      <main className="flex flex-col gap-y-2 bg-zinc-800">
         <Hero1 />
         <Hero2 />
         <Hero3 />
