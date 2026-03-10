@@ -1,8 +1,16 @@
+"use client"
+import { useRouter } from "next/navigation"
 import "../globals.css"
 
-export default function Navbar() {
+interface Nav {
+    position?: string
+}
+
+export default function Navbar(props: Nav) {
+    const router = useRouter();
+
     return (
-        <div className="bg-black h-12 w-full flex items-center justify-center gap-15 py-8 border-b-2 border-green-500 fixed z-5 top-0 left-0">
+        <div className="bg-black h-12 w-full flex items-center justify-center gap-15 py-7 border-b-2 border-green-500" >
            
             <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" className="bg-black h-8 cursor-pointer" alt="logo" />
 
@@ -15,7 +23,7 @@ export default function Navbar() {
                 <IconElem label={"Gold & Silver"} />
                 <IconElem label={"Community"} />
                 <IconElem label={"Razer.AI"} />
-                <IconElem label={"Support"} />
+                <IconElem label={"Support"} onClick={() => router.push("/support")}/>
             </ul>
 
             <div className="flex items-center gap-10 text-white">
@@ -30,9 +38,14 @@ export default function Navbar() {
     )
 }
 
-function IconElem({label}: {label: string}) {
+interface Icon {
+    label: string,
+    onClick?: () => void
+}
+
+function IconElem({label, onClick}: Icon) {
     return (
-        <div className="opacity-70 hover:opacity-100">
+        <div className="opacity-70 hover:opacity-100" onClick={onClick}>
             <h4>{label}</h4>
         </div>
     )

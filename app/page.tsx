@@ -10,12 +10,12 @@ import Hero3 from "./components/Hero3";
 export default function Home() {
   return (
     <div className="w-full h-screen font-razer">
-      <header>
-        <Navbar />
+      <header className="fixed top-0 left-0 w-full z-50">
+        <Navbar position="fixed"/>
         <Notification />
       </header>
 
-      <main className="flex flex-col gap-y-2 bg-zinc-800">
+      <main className="flex flex-col gap-y-2 bg-zinc-800 mt-24">
         <Hero1 />
         <Hero2 />
         <Hero3 />
