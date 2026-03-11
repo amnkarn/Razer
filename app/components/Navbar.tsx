@@ -21,7 +21,7 @@ export default function Navbar(props: Nav) {
                 <IconElem label={"Mobile"} />
                 <IconElem label={"Furniture & Lifestyle"} />
                 <IconElem label={"Gold & Silver"} />
-                <IconElem label={"Community"} />
+                <IconElem label={"Community"} onClick={() => router.push("/community")} />
                 <IconElem label={"Razer.AI"} />
                 <IconElem label={"Support"} onClick={() => router.push("/support")}/>
             </ul>

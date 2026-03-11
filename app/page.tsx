@@ -12,7 +12,9 @@ export default function Home() {
     <div className="w-full h-screen font-razer">
       <header className="fixed top-0 left-0 w-full z-50">
         <Navbar position="fixed"/>
-        <Notification />
+        <Notification 
+          msg="Razer Members Week: Redeem Razer.com codes at 30% off now and save them for the big drop coming soon." 
+        />
       </header>
 
       <main className="flex flex-col gap-y-2 bg-zinc-800 mt-24">

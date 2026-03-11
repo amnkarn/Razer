@@ -1,8 +1,8 @@
 
 export default function Hero() {
     return (
-        <div className="overflow-hidden relative">
-            <img src="https://assets.razerzone.com/support/images/new/home_search_bg.jpg" alt="hero" className="w-full object-top scale-110 h-100" />
+        <div className="overflow-hidden relative h-100">
+            <img src="https://assets.razerzone.com/support/images/new/home_search_bg.jpg" alt="hero" className="w-full object-top scale-110 bg-top" />
 
             <div className="absolute top-25 left-2/7 text-white flex flex-col items-center">
                 <h2 className="text-4xl">Welcome to Razer Support</h2>
