@@ -12,7 +12,7 @@ export default function Navbar(props: Nav) {
     return (
         <div className="bg-black h-12 w-full flex items-center justify-center gap-15 py-7 border-b-2 border-green-500" >
            
-            <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" className="bg-black h-8 cursor-pointer" alt="logo" />
+            <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" className="bg-black h-8 cursor-pointer" alt="logo" onClick={() => router.push("/")} />
 
             <ul className="flex text-white gap-13 cursor-pointer">
                 <IconElem label={"Store"} />
