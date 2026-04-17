@@ -44,7 +44,7 @@ export function BoxSection() {
     ]
 
     return (
-        <div className="w-full flex gap-8 items-center justify-center mt-20">
+        <div className="w-full flex gap-8 items-center justify-center mt-10">
             <Box
                 label="POPULAR"
                 games={popularGames}
