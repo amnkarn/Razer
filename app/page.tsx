@@ -1,4 +1,3 @@
-import "./globals.css"
 import Navbar from "./components/Navbar";
 import NotificationStruct from "./components/Notification";
 import Hero1 from "./components/landingPage/Hero1";

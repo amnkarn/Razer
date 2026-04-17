@@ -10,9 +10,9 @@ import BottomBanner from "../components/community/BottomBanner"
 
 export default function Community() {
     return (
-        <div className="bg-black w-full h-screen font-mont">
+        <div className="bg-black w-full font-mont">
             <header className="fixed w-full z-5">
-                <Navbar position="fixed" />
+                <Navbar />
             </header>
             <main className="pt-15">
                 <Filter />

@@ -1,6 +1,5 @@
 "use client"
 import { useRouter } from "next/navigation"
-import "../globals.css"
 import { useState } from "react";
 import ShopingModal from "./modals/shoppingModal";
 
@@ -8,7 +7,6 @@ import ShopingModal from "./modals/shoppingModal";
 export default function Navbar() {
     const router = useRouter();
     const [shoppingModal, setShoppingModal] = useState(false);
-    const [navModal, setNavModal] = useState(false);
 
 
     return (
@@ -23,7 +21,7 @@ export default function Navbar() {
                     <IconElem label={"Console"} />
                     <IconElem label={"Mobile"} />
                     <IconElem label={"Furniture & Lifestyle"} />
-                    <IconElem label={"Gold & Silver"} />
+                    <IconElem label={"Gold & Silver"} onClick={() => router.push("/gold-silver")} />
                     <IconElem label={"Community"} onClick={() => router.push("/community")} />
                     <IconElem label={"Razer.AI"} onClick={() => router.push("razer.ai")} />
                     <IconElem label={"Support"} onClick={() => router.push("/support")}/>
@@ -55,14 +53,6 @@ function IconElem({label, onClick}: Icon) {
     return (
         <div className="opacity-70 hover:opacity-100" onClick={onClick}>
             <h4>{label}</h4>
-        </div>
-    )
-}
-
-function NavModal() {
-    return (
-        <div>
-            
         </div>
     )
 }

@@ -64,7 +64,7 @@ function Card({img, label, desc}: {img: string, label: string, desc: string}) {
             </div>
 
             <h3 className="text-white text-2xl py-3">{label}</h3>
-            <p className="text-white font-medium text-zinc-300">{desc}</p>
+            <p className="font-medium text-zinc-300">{desc}</p>
         </div>
     )
 }
